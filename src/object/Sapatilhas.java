@@ -10,18 +10,17 @@ import javax.imageio.ImageIO;
  *
  * @author user88
  */
-public class Porta extends SuperObject {
+public class Sapatilhas extends SuperObject {
 
-    public Porta() {
+    public Sapatilhas() {
         colisao = true;
-        nome = "porta";
+        nome = "sapatilhas";
         try
         {
-            imagem = ImageIO.read(getClass().getResourceAsStream("/sprites/objectos/porta.png"));
+            imagem = ImageIO.read(getClass().getResourceAsStream("/sprites/objectos/sapatilha.png"));
         } catch (Exception e)
         {
             e.printStackTrace();
         }
     }
-
 }

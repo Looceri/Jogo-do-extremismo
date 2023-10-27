@@ -10,14 +10,17 @@ import javax.imageio.ImageIO;
  *
  * @author user88
  */
-public class Bau extends SuperObject{
+public class Bau extends SuperObject {
 
-            public Bau() {
-                        nome= "bau";
-                        try {
-                                    imagem=ImageIO.read(getClass().getResourceAsStream("/sprites/objectos/bau.png"));
-                        } catch (Exception e) {
-                                    e.printStackTrace();
-                        }
-            }
+    public Bau() {
+        colisao = true;
+        nome = "bau";
+        try
+        {
+            imagem = ImageIO.read(getClass().getResourceAsStream("/sprites/objectos/bau.png"));
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
 }
